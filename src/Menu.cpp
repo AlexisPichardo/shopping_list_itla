@@ -67,20 +67,32 @@ void Menu::routeAction(int option)
 
 void Menu::listItems()
 {
-	//TODO: Implement this
-	cout << "Implement  Menu::listItems" << endl;
+	cout << "Listado de compras" <<endl;
+    	menu();
 }
 
 void Menu::addItems()
 {
-	//TODO: Implement this
-	cout << "Implement  Menu::addItems" << endl;
+	cout<< "Introduccion de articulos"<<endl;
+    	cout <<"-------------------------" <<endl;
+    	cout<< "Introduzca el nombre del articulo: " ;
+    	cin >> nombre ;
+    	cout<< "Introduzca la cantidad del nuevo articulo: ";
+    	cin >> cantidad ;
+    	cout<< "\n"<<endl;
+    	cout <<"Articulo Agregado.!" <<endl;
+    	menu();
 }
 
 void Menu::removeItems()
 {
-	//TODO: Implement this
-	cout << "Implement  Menu::removeItems" << endl;
+	cout << "Eliminado de articulos" << endl;
+    cout <<"-------------------------" <<endl;
+    cout << "Elija el articulo  a eliminar => ";
+    cin >> nombre;
+    cout<< "\n"<<endl;
+    cout <<"Articulo Eliminado.!" <<endl;
+    menu();
 }
 
 void Menu::show()
